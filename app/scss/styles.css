@@ -577,6 +577,12 @@ ul {
   }
 }
 
+@media (min-width: 64em) {
+  .footer__info .info {
+    padding: 0;
+  }
+}
+
 .footer__info span {
   margin-bottom: 1rem;
   display: -webkit-inline-box;

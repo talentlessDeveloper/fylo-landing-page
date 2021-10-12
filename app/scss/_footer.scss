@@ -93,6 +93,10 @@
       @include breakpoint-desktop(medium) {
         padding: 1rem;
       }
+
+      @include breakpoint-desktop(large) {
+        padding: 0;
+      }
     }
     span {
       margin-bottom: 1rem;
