@@ -1,0 +1,47 @@
+.header {
+  font-family: "Raleway", sans-serif;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+
+  @include breakpoint-desktop(large) {
+    padding: 4rem 0;
+    margin-bottom: 7rem;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    img {
+      height: 1.45rem;
+      width: auto;
+      @include breakpoint-desktop(large) {
+        height: 2.5rem;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li:not(:last-child) {
+      margin-right: 1rem;
+      @include breakpoint-desktop(large) {
+        margin-right: 2rem;
+      }
+    }
+
+    a {
+      color: $white;
+      font-size: 0.9rem;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+      }
+    }
+  }
+}

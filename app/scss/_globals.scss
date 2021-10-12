@@ -1,0 +1,86 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $darkBlueIntro;
+  color: $white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  margin-top: 0;
+}
+
+h1 {
+  @include breakpoint-desktop(large) {
+    font-size: 2.3rem;
+  }
+}
+
+h2 {
+  @include breakpoint-mobile(small) {
+    font-size: 1.15rem;
+  }
+}
+
+p {
+  font-size: 0.82rem;
+  line-height: 1.7;
+  @include breakpoint-desktop(large) {
+    font-size: 0.9rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-px-py {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+
+  @include breakpoint-desktop(large) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+.btn-getStarted {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  background: linear-gradient(to right, $cyan, $blue);
+  color: $white;
+  width: 13rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 3.5rem;
+  transition: 300ms;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.hide {
+  display: none;
+}

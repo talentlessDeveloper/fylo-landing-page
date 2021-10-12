@@ -1,0 +1,197 @@
+.footer {
+  background-color: $darkBlueFooter;
+
+  &__access {
+    position: relative;
+    background-color: $darkBlueMain;
+    width: 100%;
+    padding: 1.3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    margin-top: -11rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 0.25rem;
+    z-index: 10;
+
+    @include breakpoint-desktop(medium) {
+      max-width: 800px;
+      margin-top: -8rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 2.5rem;
+      @include breakpoint-desktop(medium) {
+        margin-right: auto;
+        margin-left: auto;
+        width: 85%;
+      }
+    }
+
+    .form {
+      p {
+        text-align: left;
+        margin: 0;
+        margin-left: 1.2rem;
+
+        @include breakpoint-desktop(medium) {
+          margin-left: 3.75rem;
+        }
+      }
+
+      &__error {
+        color: $lightRed;
+      }
+
+      &__success {
+        color: lightgreen;
+      }
+      input {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        width: 100%;
+        height: 2.94rem;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 3rem;
+        margin-bottom: 1rem;
+
+        @include breakpoint-desktop(medium) {
+          width: 53%;
+          padding: 1rem;
+          margin-right: 0.95rem;
+        }
+      }
+
+      button {
+        width: 100%;
+        height: 2.94rem;
+        @include breakpoint-desktop(medium) {
+          width: 33%;
+        }
+      }
+    }
+  }
+
+  &__infoBox {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  &__logo {
+    height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__info {
+    .info {
+      @include breakpoint-desktop(medium) {
+        padding: 1rem;
+      }
+    }
+    span {
+      margin-bottom: 1rem;
+      display: inline-flex;
+    }
+    img {
+      margin-right: 1rem;
+      height: 1.5rem;
+    }
+
+    @include breakpoint-desktop(medium) {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      // text-align: center;
+    }
+
+    @include breakpoint-desktop(medium) {
+      display: grid;
+      grid-template-columns: 12rem repeat(4, auto);
+      gap: 0.5rem;
+    }
+
+    @include breakpoint-desktop(large) {
+      grid-template-columns: 2fr 1fr auto auto 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__location {
+    img {
+      margin-right: 1.5rem;
+    }
+
+    p {
+      @include breakpoint-desktop(medium) {
+        width: 78%;
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__links {
+    font-size: 0.9rem;
+    margin-bottom: 2.3rem;
+    li {
+      margin-bottom: 0.45rem;
+    }
+    a {
+      color: rgba(255, 255, 255, 0.65);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    li {
+      &:not(:last-child) {
+        margin-right: 1.75rem;
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.65);
+
+        &:hover {
+          color: $cyan;
+        }
+
+        i {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    width: 100%;
+
+    a {
+      font-size: 1rem;
+      color: $cyan;
+      // background: -webkit-linear-gradient($white, $cyan);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

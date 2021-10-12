@@ -1,0 +1,70 @@
+.testimonials {
+  margin: 0 auto;
+  background: $darkBlueMain;
+  width: 100%;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 20rem;
+
+  .bg-quotes {
+    position: absolute;
+    left: 0.9rem;
+    bottom: 94%;
+
+    @include breakpoint-desktop(medium) {
+      left: 0.75rem;
+      bottom: 88%;
+    }
+    @include breakpoint-desktop(large) {
+      left: 3.3rem;
+      bottom: 87%;
+    }
+  }
+
+  @include breakpoint-desktop(medium) {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.75rem;
+    padding-top: 4rem;
+    padding-bottom: 20rem;
+  }
+
+  &__card {
+    position: relative;
+    background-color: $darkBlueTestimonials;
+    text-align: left;
+    padding: 2rem 1.76rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.82rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__author {
+    display: flex;
+    img {
+      width: 2.95rem;
+      height: 2.95rem;
+      border-radius: 2.94rem;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-left: 0.75rem;
+    text-align: left;
+    font-weight: 700;
+    span {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 400;
+    }
+  }
+}
